@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Десиновское Радио | Онлайн-транслятор радиостанций</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Обязательно для PWA ↓ -->
+  <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#e74c3c">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta charset="UTF-8">
+    <title>Десиновское Радио | Онлайн-транслятор радиостанций</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #e74c3c;
+            --secondary-color: #c0392b;
+            --background-color: #f5f5f5;
+            --card-color: #ffffff;
+            --text-color: #333333;
+            --text-light: #777777;
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-container {
+            display: flex;
+            width: 100%;
+        }
+
+        #search-input {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        #search-btn {
+            padding: 0 15px;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            cursor: pointer;
+        }
+
+        main {
+            flex: 1;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .player-section {
+            background-color: var(--card-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 15px;
+            display: none;
+        }
+
+        .now-playing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        #current-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+        }
+
+        .station-info {
+            text-align: center;
+            width: 100%;
+        }
+
+        #current-name {
+            font-size: 1.2rem;
+            margin: 0 0 5px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+
+        #current-genre {
+            color: var(--text-light);
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .player-controls {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .player-controls button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .player-controls button:active {
+            transform: scale(0.95);
+        }
+
+        .player-controls button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        #stop-btn {
+            background-color: #f44336;
+        }
+
+        #favorite-btn.favorite {
+            background-color: #f1c40f;
+            color: #333;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+            max-width: 150px;
+        }
+
+        #volume-slider {
+            width: 100%;
+        }
+
+        .stations-section {
+            background-color: var(--card-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 15px;
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 15px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 10px;
+            background: none;
+            border: none;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .tab-btn.active {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .tab-btn.active:after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary-color);
+        }
+
+        .stations-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .station-card {
+            background-color: #f9f9f9;
+            border-radius: var(--border-radius);
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .station-card:active {
+            transform: scale(0.98);
+        }
+
+        .station-card.favorite {
+            background-color: #fff8e1;
+        }
+
+        .station-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            margin-bottom: 8px;
+        }
+
+        .station-name {
+            font-size: 0.9rem;
+            margin: 0 0 4px 0;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        .station-genre {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .fav-icon {
+            color: #ccc;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        .station-card.favorite .fav-icon {
+            color: #f1c40f;
+        }
+
+        .loading {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 20px;
+            color: var(--text-light);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: var(--text-light);
+            font-size: 0.8rem;
+            background: white;
+            margin-top: auto;
+        }
+
+        /* Адаптация для очень маленьких экранов */
+        @media (max-width: 360px) {
+            .stations-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .player-controls button {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* Ландшафтная ориентация */
+        @media (orientation: landscape) {
+            .now-playing {
+                flex-direction: row;
+                align-items: center;
+                text-align: left;
+                gap: 15px;
+            }
+            
+            .station-info {
+                text-align: left;
+                flex: 1;
+            }
+            
+            .player-controls {
+                margin-top: 0;
+                justify-content: flex-start;
+            }
+        }
+
+        /* Для экранов шире 500px */
+        @media (min-width: 500px) {
+            .stations-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1><i class="fas fa-broadcast-tower"></i> Десиновское Радио</h1>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Поиск радиостанций...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="player-section" id="player-section">
+                <div class="now-playing">
+                    <img id="current-logo" src="https://via.placeholder.com/80" alt="Логотип">
+                    <div class="station-info">
+                        <h2 id="current-name">Выберите станцию</h2>
+                        <p id="current-genre">—</p>
+                    </div>
+                    <div class="player-controls">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button id="stop-btn" disabled><i class="fas fa-stop"></i></button>
+                        <button id="favorite-btn"><i class="far fa-star"></i></button>
+                        <div class="volume-control">
+                            <i class="fas fa-volume-up"></i>
+                            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stations-section">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="all">Все станции</button>
+                    <button class="tab-btn" data-tab="favorites">Избранное</button>
+                </div>
+
+                <div class="stations-grid" id="stations-container">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i> Загрузка радиостанций...
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Десиновское Радио</p>
+            <p>Скажем нет надоедливой рекламе!</p>
+        </footer>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js')
+            .then(() => console.log('SW registered!'))
+            .catch(err => console.log('SW error: ', err));
+        }
+      </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
