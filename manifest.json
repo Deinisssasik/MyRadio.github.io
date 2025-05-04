@@ -1,7 +1,6 @@
 {
     "name": "Российское Радио",
     "short_name": "Радио",
-    "scope": "/",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#e74c3c",
