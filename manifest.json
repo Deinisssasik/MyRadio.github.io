@@ -1,0 +1,18 @@
+{
+    "name": "Российское Радио",
+    "short_name": "Радио",
+    "scope": "/",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#e74c3c",
+    "theme_color": "#e74c3c",
+    "description": "Онлайн-радио плеер",
+    "icons": [
+        {
+            "src": "img/i(2).jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        }
+    ]
+    
+}
