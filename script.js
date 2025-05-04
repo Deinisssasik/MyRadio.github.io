@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: "3",
             name: "DFM",
-            url: "http://dfm.hostingradio.ru/dfm96.aacp",
+            url: "https://5.restream.one/1964_1",
             genre: "Танцевальная",
             region: "Москва",
             logo: "img/DFM.png"
