@@ -1,0 +1,19 @@
+{
+  "name": "Десиновское Радио",
+  "short_name": "Десиновское Радио",
+  "start_url": "/MyRadio.github.io/",
+  "scope": "/MyRadio.github.io/",
+  "display": "standalone",
+  "background_color": "#e74c3c",
+  "theme_color": "#e74c3c",
+  "description": "Онлайн-транслятор радиостанций без рекламы",
+  "orientation": "portrait",
+  "categories": ["music", "entertainment"],
+  "icons": [
+    {
+      "src": "img/i(2).jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
