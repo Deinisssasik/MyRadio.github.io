@@ -2,8 +2,6 @@
     {
   "name": "Десиновское Радио",
   "short_name": "Десиновское Радио",
-  "start_url": "/",
-  "scope": "/",
   "display": "standalone",
   "background_color": "#e74c3c",
   "theme_color": "#e74c3c",
