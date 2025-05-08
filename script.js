@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Europa_plus.png"
         },
         {
-            id: "3",
+            id: "2",
             name: "DFM",
             url: "https://5.restream.one/1964_1",
             genre: "Танцевальная",
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/DFM.png"
         },
         {
-            id: "60",
+            id: "3",
             name: "Дорожное Радио",
             url: "http://dorognoe.hostingradio.ru:8000/dorognoe",
             genre: "Авторская музыка",
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Dorognoe_Radio.png"
         },
         {
-            id: "61",
+            id: "4",
             name: "ENERGY",
             url: "http://ic7.101.ru:8000/stream/air/aac/64/99",
             genre: "Танцевальная",
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Radio_ENERGY.png"
         },
         {
-            id: "65",
+            id: "5",
             name: "Радио Шансон",
             url: "http://chanson.hostingradio.ru:8041/chanson128.mp3",
             genre: "Шансон",
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/shanson.png"
         },
         {
-            id: "74",
+            id: "6",
             name: "Радио Маяк",
             url: "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
             genre: "Разговорное",
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Radio_Mayak.png"
         },
         {
-            id: "75",
+            id: "7",
             name: "Вести FM",
             url: "http://icecast.vgtrk.cdnvideo.ru/vestifm",
             genre: "Новости",
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/vesti.webp"
         },
         {
-            id: "101",
+            id: "8",
             name: "Радио Дача",
             url: "http://listen.vdfm.ru:8000/dacha",
             genre: "Русские хиты",
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/dacha.png"
         },
         {
-            id: "102",
+            id: "9",
             name: "Русское Радио",
             url: "https://rusradio.hostingradio.ru/rusradio128.mp3",
             genre: "Русская поп-музыка",
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Russkoe_radio.png"
         },
         {
-            id: "201",
+            id: "10",
             name: "Новое Радио",
             url: "https://icecast-newradio.cdnvideo.ru/newradio3",
             genre: "Русская поп-музыка",
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Novoe.png"
         },
         {
-            id: "202",
+            id: "11",
             name: "Love Radio",
             url: "http://87.244.47.90:8000/rh",
             genre: "Поп-музыка",
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/love.png"
         },
         {
-            id: "204",
+            id: "12",
             name: "Радио Монте-Карло",
             url: "https://mc-mcgold.hostingradio.ru/mcgold96.aacp",
             genre: "Поп-музыка",
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Monte.jpg"
         },
         {
-            id: "205",
+            id: "13",
             name: "Рекорд (Radio Record)",
             url: "https://icecast-record.cdnvideo.ru/record",
             genre: "Танцевальная",
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/record.png"
         },
         {
-            id: "206",
+            id: "14",
             name: "Авторадио",
             url: "https://pub0301.101.ru:8000/stream/air/aac/64/99",
             genre: "Автомобильная музыка",
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/avto_radio.webp"
         },
         {
-            id: "207",
+            id: "15",
             name: "НАШЕ Радио",
             url: "https://nashe1.hostingradio.ru/nashe-256",
             genre: "Русский рок",
