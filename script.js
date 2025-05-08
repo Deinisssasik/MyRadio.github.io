@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: "6",
             name: "Радио Маяк",
-            url: "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
+            url: "https://radio.promedia.ru/love-simf",
             genre: "Разговорное",
-            region: "Москва",
+            region: "Череповец",
             logo: "img/Radio_Mayak.png"
         },
         {
