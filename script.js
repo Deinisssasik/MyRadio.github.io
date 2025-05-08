@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: "6",
             name: "Радио Маяк",
-            url: "http://radio.gtrk35.ru/RadioMayak",
+            url: "http://icecast.vgtrk.cdnvideo.ru/mayak_nn",
             genre: "Разговорное",
-            region: "Череповец",
+            region: "Нижний Новгород",
             logo: "img/Radio_Mayak.png"
         },
         {
