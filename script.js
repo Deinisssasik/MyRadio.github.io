@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: "6",
             name: "Радио Маяк",
-            url: "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
+            url: "http://radio.gtrk35.ru/RadioMayak",
             genre: "Разговорное",
             region: "Москва",
             logo: "img/Radio_Mayak.png"
