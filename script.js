@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: "6",
-            name: "Радио Маяк",
+            name: "Радио Маяк (может не работать)",
             url: "http://radio.gtrk-kaluga.ru/mayakfm_kaluga",
             genre: "Разговорное",
             region: "Калуга",
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: "7",
-            name: "Вести FM",
+            name: "Вести FM (может не работать)",
             url: "http://icecast.vgtrk.cdnvideo.ru/vestifm",
             genre: "Новости",
             region: "Москва",
