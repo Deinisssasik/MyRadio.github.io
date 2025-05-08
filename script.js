@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: "75",
             name: "Вести FM",
-            url: "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps",
+            url: "http://icecast.vgtrk.cdnvideo.ru/vestifm",
             genre: "Новости",
             region: "Москва",
             logo: "img/vesti.webp"
