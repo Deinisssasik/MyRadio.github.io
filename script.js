@@ -41,14 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/shanson.png"
         },
         {
-            id: "6",
-            name: "Радио Маяк",
-            url: "http://radio.gtrk35.ru/RadioMayak",
-            genre: "Разговорное",
-            region: "Москва",
-            logo: "img/Radio_Mayak.png"
-        },
-        {
             id: "7",
             name: "Вести FM",
             url: "http://icecast.vgtrk.cdnvideo.ru/vestifm",
