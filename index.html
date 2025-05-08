@@ -212,6 +212,16 @@
             box-shadow: var(--shadow);
             padding: 15px;
         }
+      .stations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.station-card {
+  width: 100%; /* Занимает всю доступную ширину */
+  max-width: 200px; /* Но не более 200px */
+}
 
         .tabs {
             display: flex;
