@@ -41,14 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/shanson.png"
         },
         {
-            id: "6",
-            name: "Радио Маяк",
-            url: "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
-            genre: "Разговорное",
-            region: "Москва",
-            logo: "img/Radio_Mayak.png"
-        },
-        {
             id: "7",
             name: "Вести FM",
             url: "http://icecast.vgtrk.cdnvideo.ru/vestifm",
@@ -120,6 +112,14 @@ document.addEventListener('DOMContentLoaded', function() {
             region: "Москва",
             logo: "img/nashe.jpg"
         },
+        {
+            id: "6",
+            name: "Радио Маяк",
+            url: "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
+            genre: "Разговорное",
+            region: "Москва",
+            logo: "img/Radio_Mayak.png"
+        }
     ];
 
     // Полный список из 60 станций доступен здесь (ссылка не рабочая):
