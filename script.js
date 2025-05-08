@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/shanson.png"
         },
         {
+            id: "6",
+            name: "Радио Маяк",
+            url: "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
+            genre: "Разговорное",
+            region: "Москва",
+            logo: "img/Radio_Mayak.png"
+        },
+        {
             id: "7",
             name: "Вести FM",
             url: "http://icecast.vgtrk.cdnvideo.ru/vestifm",
@@ -111,14 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
             genre: "Русский рок",
             region: "Москва",
             logo: "img/nashe.jpg"
-        },
-        {
-            id: "16",
-            name: "Радио Маяк",
-            url: "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
-            genre: "Разговорное",
-            region: "Москва",
-            logo: "img/Radio_Mayak.png"
         }
     ];
 
