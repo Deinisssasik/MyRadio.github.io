@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: "6",
             name: "Радио Маяк",
-            url: "http://icecast.vgtrk.cdnvideo.ru/mayak_nn",
+            url: "http://radio.gtrk-kaluga.ru/mayakfm_kaluga",
             genre: "Разговорное",
-            region: "Нижний Новгород",
+            region: "Калуга",
             logo: "img/Radio_Mayak.png"
         },
         {
