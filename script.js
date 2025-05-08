@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/nashe.jpg"
         },
         {
-            id: "6",
+            id: "16",
             name: "Радио Маяк",
             url: "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
             genre: "Разговорное",
