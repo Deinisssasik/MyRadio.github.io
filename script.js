@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: "6",
             name: "Радио Маяк",
-            url: "https://radio.promedia.ru/love-simf",
+            url: "http://radio.gtrk35.ru/RadioMayak",
             genre: "Разговорное",
             region: "Череповец",
             logo: "img/Radio_Mayak.png"
