@@ -212,16 +212,6 @@
             box-shadow: var(--shadow);
             padding: 15px;
         }
-      .stations-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 15px;
-}
-
-.station-card {
-  width: 100%; /* Занимает всю доступную ширину */
-  max-width: 200px; /* Но не более 200px */
-}
 
         .tabs {
             display: flex;
@@ -256,22 +246,15 @@
         }
 
         .stations-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
 
-        .station-card {
-            background-color: #f9f9f9;
-            border-radius: var(--border-radius);
-            padding: 12px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            transition: transform 0.2s;
-            cursor: pointer;
-        }
+.station-card {
+  width: 100%; /* Занимает всю доступную ширину */
+  max-width: 200px; /* Но не более 200px */
+}
 
         .station-card:active {
             transform: scale(0.98);
