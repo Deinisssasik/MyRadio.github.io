@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/shanson.png"
         },
         {
-            id: "8",
+            id: "6",
             name: "Радио Дача",
             url: "http://listen.vdfm.ru:8000/dacha",
             genre: "Русские хиты",
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/dacha.png"
         },
         {
-            id: "9",
+            id: "7",
             name: "Русское Радио",
             url: "https://rusradio.hostingradio.ru/rusradio128.mp3",
             genre: "Русская поп-музыка",
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Russkoe_radio.png"
         },
         {
-            id: "10",
+            id: "8",
             name: "Новое Радио",
             url: "https://icecast-newradio.cdnvideo.ru/newradio3",
             genre: "Русская поп-музыка",
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Novoe.png"
         },
         {
-            id: "11",
+            id: "9",
             name: "Love Radio",
             url: "https://radio.promedia.ru/love-simf",
             genre: "Поп-музыка",
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/love.png"
         },
         {
-            id: "12",
+            id: "10",
             name: "Радио Монте-Карло",
             url: "https://mc-mcgold.hostingradio.ru/mcgold96.aacp",
             genre: "Поп-музыка",
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/Monte.jpg"
         },
         {
-            id: "13",
+            id: "11",
             name: "Рекорд (Radio Record)",
             url: "https://icecast-record.cdnvideo.ru/record",
             genre: "Танцевальная",
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/record.png"
         },
         {
-            id: "14",
+            id: "12",
             name: "Авторадио",
             url: "https://pub0301.101.ru:8000/stream/air/aac/64/99",
             genre: "Автомобильная музыка",
@@ -97,14 +97,14 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/avto_radio.webp"
         },
         {
-            id: "15",
+            id: "13",
             name: "НАШЕ Радио",
             url: "https://nashe1.hostingradio.ru/nashe-256",
             genre: "Русский рок",
             region: "Москва",
             logo: "img/nashe.jpg"
         },
-        {id: "16",
+        {id: "14",
             name: "Юмор FM",
             url: "http://pub0101.101.ru:8000/stream/air/aac/64/102",
             genre: "Разговорное",
