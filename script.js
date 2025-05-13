@@ -120,6 +120,13 @@ document.addEventListener('DOMContentLoaded', function() {
             region: "Москва",
             logo: "img/nashe.jpg"
         },
+        {id: "16",
+            name: "Юмор FM",
+            url: "http://pub0101.101.ru:8000/stream/air/aac/64/102",
+            genre: "Разговорное",
+            region: "Москва",
+            logo: "img/hahaha.jpg"
+        }
     ];
 
     // Полный список из 60 станций доступен здесь (ссылка не рабочая):
