@@ -41,22 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
             logo: "img/shanson.png"
         },
         {
-            id: "6",
-            name: "Радио Маяк (может не работать)",
-            url: "http://radio.gtrk-kaluga.ru/mayakfm_kaluga",
-            genre: "Разговорное",
-            region: "Калуга",
-            logo: "img/Radio_Mayak.png"
-        },
-        {
-            id: "7",
-            name: "Вести FM (может не работать)",
-            url: "http://icecast.vgtrk.cdnvideo.ru/vestifm",
-            genre: "Новости",
-            region: "Москва",
-            logo: "img/vesti.webp"
-        },
-        {
             id: "8",
             name: "Радио Дача",
             url: "http://listen.vdfm.ru:8000/dacha",
